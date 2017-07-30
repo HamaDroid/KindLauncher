@@ -11,60 +11,63 @@
         android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
         android:background="@android:color/transparent"
         android:onClick="play"
         app:srcCompat="@drawable/play"
-        android:layout_below="@+id/imageButton2"
-        android:layout_alignLeft="@+id/imageButton7"
-        android:layout_alignStart="@+id/imageButton7" />
+        android:layout_weight="1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_above="@+id/imageButton7"
+        android:layout_alignLeft="@+id/imageButton2"
+        android:layout_alignStart="@+id/imageButton2" />
 
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:background="@android:color/transparent"
         android:onClick="search"
         app:srcCompat="@drawable/search"
         android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/imageButton"
-        android:layout_alignStart="@+id/imageButton" />
+        android:layout_alignLeft="@+id/imageButton8"
+        android:layout_alignStart="@+id/imageButton8" />
 
     <ImageButton
         android:id="@+id/imageButton4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/imageButton6"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/imageButton6"
         android:background="@android:color/transparent"
         android:onClick="setting"
-        app:srcCompat="@drawable/setting" />
+        app:srcCompat="@drawable/setting"
+        android:layout_weight="1"
+        android:layout_below="@+id/button"
+        android:layout_toRightOf="@+id/imageButton5"
+        android:layout_toEndOf="@+id/imageButton5" />
 
     <ImageButton
         android:id="@+id/imageButton5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/imageButton4"
-        android:layout_marginEnd="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_toLeftOf="@+id/imageButton4"
-        android:layout_toStartOf="@+id/imageButton4"
         android:background="@android:color/transparent"
         android:onClick="camera"
-        app:srcCompat="@drawable/camera" />
+        app:srcCompat="@drawable/camera"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/imageButton10"
+        android:layout_toEndOf="@+id/imageButton10"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp" />
 
     <ImageButton
         android:id="@+id/imageButton6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
         android:background="@android:color/transparent"
         android:onClick="line"
         app:srcCompat="@drawable/line"
-        android:layout_alignTop="@+id/imageButton"
+        android:layout_weight="1"
+        android:layout_above="@+id/imageButton7"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
@@ -72,15 +75,13 @@
         android:id="@+id/imageButton7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="38dp"
         android:background="@android:color/transparent"
         android:onClick="gallery"
         app:srcCompat="@drawable/gallery"
-        android:layout_marginLeft="25dp"
-        android:layout_marginStart="25dp"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_weight="1"
+        android:layout_alignTop="@+id/imageButton9"
+        android:layout_alignLeft="@+id/imageButton"
+        android:layout_alignStart="@+id/imageButton" />
 
     <ImageButton
         android:id="@+id/imageButton8"
@@ -90,8 +91,10 @@
         android:onClick="phone"
         app:srcCompat="@drawable/phone"
         android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/imageButton7"
-        android:layout_alignStart="@+id/imageButton7" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp" />
 
     <ImageButton
         android:id="@+id/imageButton9"
@@ -100,9 +103,11 @@
         android:background="@android:color/transparent"
         android:onClick="map"
         app:srcCompat="@drawable/map"
-        android:layout_alignTop="@+id/imageButton7"
-        android:layout_alignLeft="@+id/imageButton6"
-        android:layout_alignStart="@+id/imageButton6" />
+        android:layout_weight="1"
+        android:layout_marginBottom="11dp"
+        android:layout_above="@+id/textView3"
+        android:layout_toRightOf="@+id/button"
+        android:layout_toEndOf="@+id/button" />
 
     <ImageButton
         android:id="@+id/imageButton10"
@@ -111,11 +116,10 @@
         android:background="@android:color/transparent"
         android:onClick="radio"
         app:srcCompat="@drawable/radio"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
+        android:layout_weight="1"
         android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/imageButton8"
-        android:layout_toEndOf="@+id/imageButton8" />
+        android:layout_alignRight="@+id/imageButton"
+        android:layout_alignEnd="@+id/imageButton" />
 
     <Button
         android:id="@+id/button"
@@ -125,22 +129,21 @@
         android:text="次のぺージ"
         android:layout_marginBottom="20dp"
         android:layout_above="@+id/imageButton5"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"/>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
         android:text="Playストア"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:layout_below="@+id/imageButton"
-        android:layout_toLeftOf="@+id/button"
-        android:layout_toStartOf="@+id/button"
-        android:layout_marginRight="18dp"
-        android:layout_marginEnd="18dp" />
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
 
     <TextView
         android:id="@+id/textView2"
@@ -150,12 +153,12 @@
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:layout_marginLeft="52dp"
-        android:layout_marginStart="52dp"
-        android:layout_alignBaseline="@+id/textView"
-        android:layout_alignBottom="@+id/textView"
-        android:layout_alignLeft="@+id/imageButton6"
-        android:layout_alignStart="@+id/imageButton6" />
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/imageButton6"
+        android:layout_toRightOf="@+id/button"
+        android:layout_toEndOf="@+id/button"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -165,12 +168,9 @@
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:layout_marginTop="13dp"
-        android:layout_below="@+id/imageButton7"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp" />
+        android:layout_above="@+id/button"
+        android:layout_toRightOf="@+id/imageButton2"
+        android:layout_toEndOf="@+id/imageButton2" />
 
     <TextView
         android:id="@+id/textView4"
@@ -180,8 +180,10 @@
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:layout_alignBaseline="@+id/textView3"
-        android:layout_alignBottom="@+id/textView3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_above="@+id/button"
         android:layout_alignLeft="@+id/textView2"
         android:layout_alignStart="@+id/textView2" />
+
 </RelativeLayout>
