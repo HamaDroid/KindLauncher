@@ -140,18 +140,6 @@
         android:layout_alignParentStart="true">
 
         <ImageButton
-            android:id="@+id/imageButton8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_toEndOf="@+id/imageView4"
-            android:layout_toRightOf="@+id/imageView4"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:onClick="phone"
-            app:srcCompat="@drawable/phone" />
-
-        <ImageButton
             android:id="@+id/imageButton10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -160,10 +148,22 @@
             android:layout_marginStart="9dp"
             android:layout_toEndOf="@+id/imageButton8"
             android:layout_toRightOf="@+id/imageButton8"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:background="@android:color/transparent"
             android:onClick="radio"
             app:srcCompat="@drawable/radio" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/imageView4"
+            android:layout_toRightOf="@+id/imageView4"
+            android:layout_weight="2"
+            android:background="@android:color/transparent"
+            android:onClick="phone"
+            app:srcCompat="@drawable/phone" />
 
         <ImageButton
             android:id="@+id/imageButton5"
@@ -172,7 +172,7 @@
             android:layout_alignParentBottom="true"
             android:layout_toLeftOf="@+id/textView6"
             android:layout_toStartOf="@+id/textView6"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:background="@android:color/transparent"
             android:onClick="camera"
             app:srcCompat="@drawable/camera" />
@@ -184,7 +184,7 @@
             android:layout_alignEnd="@+id/imageButton13"
             android:layout_alignParentBottom="true"
             android:layout_alignRight="@+id/imageButton13"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:background="@android:color/transparent"
             android:onClick="setting"
             app:srcCompat="@drawable/setting" />

@@ -147,7 +147,7 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:background="@android:color/transparent"
             android:onClick="phone"
             app:srcCompat="@drawable/phone" />
@@ -159,7 +159,7 @@
             android:layout_below="@+id/button"
             android:layout_toLeftOf="@+id/button"
             android:layout_toStartOf="@+id/button"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:background="@android:color/transparent"
             android:onClick="radio"
             app:srcCompat="@drawable/radio" />
@@ -171,7 +171,7 @@
             android:layout_alignParentBottom="true"
             android:layout_toEndOf="@+id/button"
             android:layout_toRightOf="@+id/button"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:background="@android:color/transparent"
             android:onClick="camera"
             app:srcCompat="@drawable/camera" />
@@ -183,7 +183,7 @@
             android:layout_alignEnd="@+id/imageButton9"
             android:layout_alignParentBottom="true"
             android:layout_alignRight="@+id/imageButton9"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:background="@android:color/transparent"
             android:onClick="setting"
             app:srcCompat="@drawable/setting" />
