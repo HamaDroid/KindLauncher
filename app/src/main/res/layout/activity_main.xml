@@ -29,8 +29,8 @@
         android:onClick="search"
         app:srcCompat="@drawable/search"
         android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/imageButton8"
-        android:layout_alignStart="@+id/imageButton8" />
+        android:layout_alignLeft="@+id/call"
+        android:layout_alignStart="@+id/call" />
 
     <ImageButton
         android:id="@+id/imageButton6"
@@ -141,7 +141,7 @@
         android:id="@+id/linearLayout">
 
         <ImageButton
-            android:id="@+id/imageButton8"
+            android:id="@+id/call"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
