@@ -67,12 +67,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void weather(View v) {
-        Uri uri = Uri.parse("https://tenki.jp/");
-        Intent i = new Intent(Intent.ACTION_VIEW, uri);
-        startActivity(i);
-    }
-
     public void search(View v) {
         PackageManager pm = getPackageManager();
         Intent intent = pm.getLaunchIntentForPackage("com.google.android.googlequicksearchbox");
