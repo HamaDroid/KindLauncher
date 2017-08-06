@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setTheme(android.R.style.Theme_Wallpaper_NoTitleBar);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
@@ -52,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void camera(View v) {
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("image:"));
+        Intent intent = new Intent(MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA);
         startActivity(intent);
     }
 
@@ -63,18 +62,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void phone(View v) {
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:"));
+        Intent intent = new Intent(Intent.ACTION_DIAL);
         startActivity(intent);
     }
 
     public void search(View v) {
-        PackageManager pm = getPackageManager();
-        Intent intent = pm.getLaunchIntentForPackage("com.google.android.googlequicksearchbox");
+        Intent intent = new Intent(Intent.ACTION_WEB_SEARCH);
         startActivity(intent);
     }
 
     public void onBackPressed() {
     }
+
     public void next(View v) {
         Intent intent = new Intent(getApplicationContext(), Main2Activity.class);
         startActivity(intent);
