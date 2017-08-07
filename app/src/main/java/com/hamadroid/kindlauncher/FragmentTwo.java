@@ -1,22 +1,23 @@
 package com.hamadroid.kindlauncher;
 
-import android.app.DownloadManager;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.net.Uri;
+import android.os.Bundle;
 import android.provider.CalendarContract;
 import android.provider.ContactsContract;
 import android.provider.MediaStore;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 
-public class Main2Activity extends AppCompatActivity {
+public class FragmentTwo extends Fragment {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_two, container, false);
     }
 
     public void phone(View v) {
@@ -28,13 +29,13 @@ public class Main2Activity extends AppCompatActivity {
         startActivity(intent);
     }
     public void radio(View v) {
-        PackageManager pm = getPackageManager();
+        PackageManager pm = getActivity().getPackageManager();
         Intent intent = pm.getLaunchIntentForPackage("jp.radiko.Player");
         startActivity(intent);
     }
     public void gallery(View v) {
         Intent intent = new Intent();
-        intent.setType("image/*");
+        intent.setType("image*//*");
         startActivity(intent);
     }
     public void calender(View v){
@@ -44,7 +45,7 @@ public class Main2Activity extends AppCompatActivity {
     public void camera(View v) {
         Intent intent = new Intent(MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA);
         startActivity(intent);
-}
+    }
     public void contacts(View v){
         Intent intent = new Intent(Intent.ACTION_PICK);
         intent.setType(ContactsContract.Contacts.CONTENT_TYPE);
